@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <style>
+    </style>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    
+    <script>
+
+
+function rainbow(){
+    let first = document.getElementById("first");
+    first.style.color = "#ff0000";
+    let second = document.getElementById("second");
+    second.style.color = "#00ff11";
+    let third = document.getElementById("third");
+    third.style.color = "#eeff00";
+    console.log("rainbow");
+}
+function black(){
+    let first = document.getElementById("first");
+    first.style.color = "#000000";
+    let second = document.getElementById("second");
+    second.style.color = "#000000";
+    let third = document.getElementById("third");
+    third.style.color = "#000000";
+    console.log("black");
+}
+
+setInterval(() => {
+    rainbow();
+}, 1000);
+setInterval(() => {
+    black();
+}, 499);
+
+
+
+    </script>
+
+</body>
+
+</html>

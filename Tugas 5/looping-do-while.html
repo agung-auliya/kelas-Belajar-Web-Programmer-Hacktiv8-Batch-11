@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Do While</title>
+</head>
+<body>
+    <h1>Looping Do While</h1>
+    <label>Kata yang akan di input</label><input type="text" id="text" placeholder="kata yang ingin di input"><br>
+    <label>jumlah pengulangan</label><input type="number" id="number" placeholder="jumlah pengulangan"><br>
+    <button id="submit" onclick="cetak()">submit</button>
+    <ol id="hasil">
+        
+    </ol>
+
+    <script>
+        // const nama_variabel= document.getElementById("nama_variabel")
+        
+        
+        function cetak(){
+            let kata = document.getElementById("text").value;
+            let angka = document.getElementById("number").value;
+            let i = 0;
+            let penampung = '<li>' + kata + '</li>';
+            console.log(kata);
+            console.log(angka);
+
+            do{
+                document.getElementById("hasil").innerHTML+=penampung;
+                i++;
+            } while (i<angka);
+        }
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+MENGHITUNG LUAS DAN KELILING LINGKARAN
+
+
+//deklarasi variabel
+r, pi, luas, keliling : float
+pi = 3.14
+
+MULAI
+	//input
+	tampilkan("masukkan nilai jari-jari lingkaran : ");
+	input(r);
+
+	//proses
+	luas = pi*r^2
+	keliling = 2*pi*r
+
+	//output
+	tampilkan("luas lingkaran = " + luas)
+	tampilkan("keliling lingkaran = " + keliling)
+
+SELESAI
